@@ -2,8 +2,9 @@
 <html>
 <head>
     <title>Tradebyte Seating Plan</title>
+
 <style>
-  .f3-desk {
+.f3-desk {
   fill:#CE9C68;
   stroke-width:1;
   stroke:#8A8888
@@ -16,6 +17,9 @@
 }
 .red-stuff {
   fill:#8A251F;
+}
+.blue-stuff {
+  fill:#0E58DB;
 }
 .gray-stuff {
   fill:#706D6D;
@@ -31,14 +35,21 @@
   stroke-width:4;
 }
 
+
 </style>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css" />
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
 </head>
 <body>
 
 <h1>Tradebyte Seating Plan</h1>
 
 
-<svg width="100%" height="310" style="background:rgb(220,220,220)">
+
+<svg width="100%" height="310" style="background:#DBDBDB;border:1px solid #787878;">
   <line x1="50%" y1="0%" x2="50%" y2="40%" style="stroke:#939393;stroke-width:4" />
   <line x1="50%" y1="100%" x2="50%" y2="60%" style="stroke:#939393;stroke-width:4" />
 
@@ -67,15 +78,14 @@
   <line x1="94%" y1="50%" x2="100%" y2="50%" style="stroke:#C0BDBD;stroke-width:2" />
   <!--doors-->
   <line x1="53.5%" y1="66%" x2="55%" y2="60%" style="stroke:#C0BDBD;stroke-width:3" />
-  <line x1="58.5%" y1="66%" x2="60%" y2="60%" style="stroke:#C0BDBD;stroke-width:3" />
-  <line x1="58.5%" y1="66%" x2="60%" y2="60%" style="stroke:#C0BDBD;stroke-width:3" />
-  <line x1="61.5%" y1="66%" x2="60%" y2="60%" style="stroke:#C0BDBD;stroke-width:3" />
-  <line x1="68.5%" y1="66%" x2="70%" y2="60%" style="stroke:#C0BDBD;stroke-width:3" />
-  <line x1="71.5%" y1="66%" x2="70%" y2="60%" style="stroke:#C0BDBD;stroke-width:3" />
-  <line x1="85.5%" y1="66%" x2="87%" y2="60%" style="stroke:#C0BDBD;stroke-width:3" />
-  <line x1="88.5%" y1="66%" x2="87%" y2="60%" style="stroke:#C0BDBD;stroke-width:3" />
+  <line x1="59%" y1="66%" x2="60%" y2="60%" style="stroke:#C0BDBD;stroke-width:3" />
+  <line x1="61%" y1="66%" x2="60%" y2="60%" style="stroke:#C0BDBD;stroke-width:3" />
+  <line x1="69%" y1="66%" x2="70%" y2="60%" style="stroke:#C0BDBD;stroke-width:3" />
+  <line x1="71%" y1="66%" x2="70%" y2="60%" style="stroke:#C0BDBD;stroke-width:3" />
+  <line x1="86%" y1="66%" x2="87%" y2="60%" style="stroke:#C0BDBD;stroke-width:3" />
+  <line x1="88%" y1="66%" x2="87%" y2="60%" style="stroke:#C0BDBD;stroke-width:3" />
   <line x1="93.5%" y1="66%" x2="92%" y2="60%" style="stroke:#C0BDBD;stroke-width:3" />
-  <line x1="88.5%" y1="34%" x2="87%" y2="40%" style="stroke:#C0BDBD;stroke-width:3" />
+  <line x1="88%" y1="34%" x2="87%" y2="40%" style="stroke:#C0BDBD;stroke-width:3" />
   <line x1="93.5%" y1="34%" x2="92%" y2="40%" style="stroke:#C0BDBD;stroke-width:3" />
   <line x1="50%" y1="60%" x2="52%" y2="42%" style="stroke:#C0BDBD;stroke-width:3" />
 
@@ -174,5 +184,11 @@
   <line x1="87%" y1="0%" x2="87%" y2="40%" style="stroke:#C0BDBD;stroke-width:2" />
 </svg>
 
+
+ <script>
+        $(document).ready(function() {
+            $('.f3-desk').tooltipster();
+        });
+    </script>
 
 </body>
