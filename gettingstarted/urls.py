@@ -13,7 +13,7 @@ import hello.views
 urlpatterns = [
     url(r'^$', hello.views.index, name='index'),
     url(r'^db', hello.views.db, name='db'),
-    url(r'^admin/about/$', hello.views.index),
+    url(r'^seating', hello.views.seating),
     path('admin/', admin.site.urls),
 
 ]
