@@ -16,5 +16,4 @@ urlpatterns = [
     url(r'^seating', hello.views.seating),
     path('admin/', admin.site.urls),
     url(r'^api/v1/', include('hello.urls'))
-
 ]
